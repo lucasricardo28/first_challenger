@@ -13,6 +13,8 @@
 		AB9B54B225882C6E008F0C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9B54B025882C6E008F0C99 /* Main.storyboard */; };
 		AB9B54B425882C91008F0C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9B54B325882C91008F0C99 /* Assets.xcassets */; };
 		AB9B54B725882C91008F0C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9B54B525882C91008F0C99 /* LaunchScreen.storyboard */; };
+		AB9B54C92588341D008F0C99 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9B54C82588341D008F0C99 /* Slide.swift */; };
+		AB9B54CC25883439008F0C99 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9B54CB25883439008F0C99 /* Slide.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AB9B54B325882C91008F0C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB9B54B625882C91008F0C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB9B54B825882C91008F0C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9B54C82588341D008F0C99 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		AB9B54CB25883439008F0C99 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		AB9B54A925882C6E008F0C99 /* challenger_movies */ = {
 			isa = PBXGroup;
 			children = (
+				AB9B54C2258833A7008F0C99 /* View */,
+				AB9B54BF25882D52008F0C99 /* Controllers */,
 				AB9B54AA25882C6E008F0C99 /* AppDelegate.swift */,
 				AB9B54AC25882C6E008F0C99 /* SceneDelegate.swift */,
 				AB9B54AE25882C6E008F0C99 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				AB9B54B825882C91008F0C99 /* Info.plist */,
 			);
 			path = challenger_movies;
+			sourceTree = "<group>";
+		};
+		AB9B54BF25882D52008F0C99 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB9B54C82588341D008F0C99 /* Slide.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AB9B54C2258833A7008F0C99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB9B54CB25883439008F0C99 /* Slide.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +149,7 @@
 				AB9B54B725882C91008F0C99 /* LaunchScreen.storyboard in Resources */,
 				AB9B54B425882C91008F0C99 /* Assets.xcassets in Resources */,
 				AB9B54B225882C6E008F0C99 /* Main.storyboard in Resources */,
+				AB9B54CC25883439008F0C99 /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +163,7 @@
 				AB9B54AF25882C6E008F0C99 /* ViewController.swift in Sources */,
 				AB9B54AB25882C6E008F0C99 /* AppDelegate.swift in Sources */,
 				AB9B54AD25882C6E008F0C99 /* SceneDelegate.swift in Sources */,
+				AB9B54C92588341D008F0C99 /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
