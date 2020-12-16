@@ -67,6 +67,7 @@ extension MovieViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedMovie = movies[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
         
         self.performSegue(withIdentifier:"segueDetailMovie", sender: self)
     }

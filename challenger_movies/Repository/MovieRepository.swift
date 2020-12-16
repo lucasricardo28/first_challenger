@@ -26,4 +26,9 @@ class MovieRepository{
         
         return [movie1, movie2, movie3, movie4, movie5, movie6]
     }
+    
+    static func getSugestionMovies() -> Array<Movie>
+    {
+        return getAllMovies().shuffled()
+    }
 }

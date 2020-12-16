@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: ViewController {
+class DetailViewController: UIViewController {
     
     var movie:Movie = Movie(image_background: UIImage(), image_main: UIImage(), title: "", category: "", description: "")
     

@@ -20,6 +20,8 @@
 		AB9B54C92588341D008F0C99 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9B54C82588341D008F0C99 /* Slide.swift */; };
 		AB9B54CC25883439008F0C99 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9B54CB25883439008F0C99 /* Slide.xib */; };
 		ABDC9AE0258AB7A5001D5309 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC9ADF258AB7A5001D5309 /* DetailViewController.swift */; };
+		ABDC9AE3258ACA9B001D5309 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC9AE2258ACA9B001D5309 /* MovieCollectionViewCell.swift */; };
+		ABDC9AE6258ACD9D001D5309 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC9AE5258ACD9D001D5309 /* ConfigViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		AB9B54C82588341D008F0C99 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		AB9B54CB25883439008F0C99 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		ABDC9ADF258AB7A5001D5309 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ABDC9AE2258ACA9B001D5309 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABDC9AE5258ACD9D001D5309 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				AB9B54C82588341D008F0C99 /* Slide.swift */,
 				AB2EE82125897D840011FD46 /* MovieViewController.swift */,
 				ABDC9ADF258AB7A5001D5309 /* DetailViewController.swift */,
+				ABDC9AE2258ACA9B001D5309 /* MovieCollectionViewCell.swift */,
+				ABDC9AE5258ACD9D001D5309 /* ConfigViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -194,10 +200,12 @@
 				ABDC9AE0258AB7A5001D5309 /* DetailViewController.swift in Sources */,
 				AB9B54AF25882C6E008F0C99 /* ViewController.swift in Sources */,
 				AB2EE82225897D840011FD46 /* MovieViewController.swift in Sources */,
+				ABDC9AE6258ACD9D001D5309 /* ConfigViewController.swift in Sources */,
 				AB2EE82625897DF70011FD46 /* Movie.swift in Sources */,
 				AB9B54AB25882C6E008F0C99 /* AppDelegate.swift in Sources */,
 				AB2EE82A25897F2E0011FD46 /* MovieRepository.swift in Sources */,
 				AB9B54AD25882C6E008F0C99 /* SceneDelegate.swift in Sources */,
+				ABDC9AE3258ACA9B001D5309 /* MovieCollectionViewCell.swift in Sources */,
 				AB2EE82D258986890011FD46 /* MovieTableViewCell.swift in Sources */,
 				AB9B54C92588341D008F0C99 /* Slide.swift in Sources */,
 			);
