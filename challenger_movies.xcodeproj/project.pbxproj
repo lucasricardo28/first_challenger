@@ -19,6 +19,7 @@
 		AB9B54B725882C91008F0C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9B54B525882C91008F0C99 /* LaunchScreen.storyboard */; };
 		AB9B54C92588341D008F0C99 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9B54C82588341D008F0C99 /* Slide.swift */; };
 		AB9B54CC25883439008F0C99 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9B54CB25883439008F0C99 /* Slide.xib */; };
+		ABDC9AE0258AB7A5001D5309 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC9ADF258AB7A5001D5309 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		AB9B54B825882C91008F0C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB9B54C82588341D008F0C99 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		AB9B54CB25883439008F0C99 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		ABDC9ADF258AB7A5001D5309 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				AB9B54C82588341D008F0C99 /* Slide.swift */,
 				AB2EE82125897D840011FD46 /* MovieViewController.swift */,
+				ABDC9ADF258AB7A5001D5309 /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABDC9AE0258AB7A5001D5309 /* DetailViewController.swift in Sources */,
 				AB9B54AF25882C6E008F0C99 /* ViewController.swift in Sources */,
 				AB2EE82225897D840011FD46 /* MovieViewController.swift in Sources */,
 				AB2EE82625897DF70011FD46 /* Movie.swift in Sources */,

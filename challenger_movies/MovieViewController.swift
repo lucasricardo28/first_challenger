@@ -12,6 +12,8 @@ class MovieViewController: UIViewController {
     //MARK: vars
     var movies:Array<Movie> = [];
     
+    var selectedMovie:Movie = Movie(image_background: UIImage(), image_main: UIImage(), title: "", category: "", description: "")
+    
     //MARK: outlets
     @IBOutlet weak var tableViewMovies: UITableView!
     
@@ -26,6 +28,12 @@ class MovieViewController: UIViewController {
     
     func loadingMovies() {
         movies = MovieRepository.getAllMovies()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailViewController {
+            destination.movie = selectedMovie
+        }
     }
 
 }
@@ -55,5 +63,11 @@ extension MovieViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 136
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedMovie = movies[indexPath.row]
+        
+        self.performSegue(withIdentifier:"segueDetailMovie", sender: self)
     }
 }
