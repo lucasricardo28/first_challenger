@@ -99,7 +99,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czY-BL-kHa">
-                                                    <rect key="frame" x="148" y="11" width="246" height="21"/>
+                                                    <rect key="frame" x="148" y="11" width="199" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
@@ -116,9 +116,21 @@
                                                     <rect key="frame" x="20" y="11" width="97" height="114"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy3-BB-ibs">
+                                                    <rect key="frame" x="372" y="1" width="30" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="♥">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="buttonFavorite:" destination="pSX-9d-Yoq" eventType="touchUpInside" id="JL9-ch-vxm"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="buttonFavoriteOutlet" destination="qy3-BB-ibs" id="Okd-Sk-Lhn"/>
                                             <outlet property="imageMain" destination="0GB-ds-UEj" id="f3o-r4-bKh"/>
                                             <outlet property="labelDescription" destination="g1J-7P-6tr" id="t2f-uu-Jg0"/>
                                             <outlet property="labelTitle" destination="czY-BL-kHa" id="ll2-JZ-CUT"/>
@@ -186,12 +198,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjc-N0-LkC">
+                                <rect key="frame" x="344" y="265" width="30" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="♥">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q1h-Uz-sII"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="KHR-Ls-HPr"/>
                     <connections>
+                        <outlet property="buttonFavorite" destination="hjc-N0-LkC" id="lGb-nF-ZRx"/>
                         <outlet property="imageBackground" destination="LuX-92-g5h" id="Fbk-b6-4oq"/>
                         <outlet property="imageMain" destination="Mh1-yM-Jbm" id="BQL-0R-JY1"/>
                         <outlet property="labelDescription" destination="GDM-y2-q7P" id="pSq-h5-syF"/>

@@ -12,7 +12,7 @@ class MovieViewController: UIViewController {
     //MARK: vars
     var movies:Array<Movie> = [];
     
-    var selectedMovie:Movie = Movie(image_background: UIImage(), image_main: UIImage(), title: "", category: "", description: "")
+    var selectedMovie:Movie = Movie(id: 0, image_background: UIImage(), image_main: UIImage(), title: "", category: "", description: "", isFavority: false)
     
     //MARK: outlets
     @IBOutlet weak var tableViewMovies: UITableView!
@@ -33,6 +33,7 @@ class MovieViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailViewController {
             destination.movie = selectedMovie
+            destination.detailProtocol = self
         }
     }
 
@@ -70,5 +71,11 @@ extension MovieViewController: UITableViewDataSource{
         tableView.deselectRow(at: indexPath, animated: true)
         
         self.performSegue(withIdentifier:"segueDetailMovie", sender: self)
+    }
+}
+
+extension MovieViewController: DetailMoviewProtocol {
+    func reloadTable() {
+        self.tableViewMovies.reloadData()
     }
 }
